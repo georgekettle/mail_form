@@ -1,7 +1,7 @@
-class ContactForm < MailForm::Base
+class Contact < MailForm::Base
   attribute :name, validate: true
   attribute :email, validate: true
-  attribute :content, validate: true
+  attribute :message, validate: true
 
   def headers
     { 

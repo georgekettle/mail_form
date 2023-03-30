@@ -1,0 +1,12 @@
+<h1>Contact us</h1>
+<p>Send us an email and we will be in touch shortly</p>
+
+<%= form_for :contact, url: contact_index_path do |f| %>
+  <%= f.label :name %>
+  <%= f.text_field :name %><br/>
+  <%= f.label :email %>
+  <%= f.text_field :email %><br/>
+  <%= f.label :message %>
+  <%= f.text_area :message %>
+  <%= f.submit %>
+<% end %>

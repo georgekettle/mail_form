@@ -11,6 +11,12 @@
   </head>
 
   <body>
+    <%# Render flashes if any %>
+    <% if notice %>
+      <p class="text-white bg-amber-500 p-2 rounded"><%= notice %></p>
+    <% elsif alert %>
+      <p class="text-white bg-red-500 p-2 rounded"><%= alert %></p>
+    <% end %>
     <%= yield %>
   </body>
 </html>
